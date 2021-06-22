@@ -1,12 +1,12 @@
 {
   "name": "express-rest",
   "version": "1.0.0",
-  "description": "express boilerpalte rest-api",
+  "description": "express boilerplate rest-api",
   "main": "app.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "SET NODE_ENV=production & node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/NderimKrasniqi/express-rest#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
